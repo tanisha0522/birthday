@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
 <title>Secret Surprise</title>
@@ -63,7 +62,7 @@ function check(){
 var password=document.getElementById("pass").value;
 
 if(password=="SatTan"){
-window.location="birthday.html";
+window.location="Birthday.html";
 }
 
 else{
