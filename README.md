@@ -1,4 +1,4 @@
-<html>
+ <html>
 <head>
 <title>Secret Surprise</title>
 
@@ -72,6 +72,46 @@ alert("Wrong password 😜 Try again");
 }
 
 </script>
+<style>
+.heart{
+position: fixed;
+bottom: -10px;
+font-size: 20px;
+animation: floatUp 6s linear infinite;
+}
 
+@keyframes floatUp{
+0%{
+transform: translateY(0);
+opacity:1;
+}
+100%{
+transform: translateY(-100vh);
+opacity:0;
+}
+}
+</style>
+
+<script>
+function createHeart(){
+
+const heart=document.createElement("div");
+heart.classList.add("heart");
+
+heart.innerHTML="❤️";
+
+heart.style.left=Math.random()*100+"vw";
+heart.style.fontSize=(Math.random()*20+10)+"px";
+
+document.body.appendChild(heart);
+
+setTimeout(()=>{
+heart.remove();
+},6000)
+
+}
+
+setInterval(createHeart,500);
+</script>
 </body>
 </html>
