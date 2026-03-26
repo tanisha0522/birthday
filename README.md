@@ -97,8 +97,9 @@ function createHeart(){
 
 const heart=document.createElement("div");
 heart.classList.add("heart");
-
-heart.innerHTML="❤️";
+const emojis=["❤️","🎈","🎀","✨"];
+heart.innerHTML=emojis[Math.floor(Math.random()*emojis.length)];
+//heart.innerHTML="❤️"; //
 
 heart.style.left=Math.random()*100+"vw";
 heart.style.fontSize=(Math.random()*20+10)+"px";
