@@ -62,7 +62,7 @@ function check(){
 var password=document.getElementById("pass").value;
 
 if(password=="SatTan"){
-window.location="Birthday.html";
+window.location="birthday.html";
 }
 
 else{
