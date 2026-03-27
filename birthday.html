@@ -43,6 +43,7 @@ border-radius:10px;
 .container{
 position:relative;
 cursor:pointer;
+width:180px;
 }
 
 .envelope{
@@ -88,7 +89,12 @@ font-size:14px;
 transform:rotateX(180deg);
 }
 
-  
+.letters-row{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}  
 
 </style>
 
@@ -130,49 +136,41 @@ transform:rotateX(180deg);
   <br>
   <br>
   <br>
-<div class="container" 
-onclick="openLetter(this)">
-<div class="flap"></div>
-<div class="envelope"></div>
-<div class="letter">
-<b>Dear akku ❤️</b>
-<p>
-Because you make my life brighter even from miles away.
-</p>
+
+<div class="letters-row">
+
+<div class="container" onclick="openLetter(this)">
+    <div class="flap"></div>
+    <div class="envelope"></div>
+    <div class="letter">
+        <b>Dear akku ❤️</b>
+        <p>Because you make my life brighter.</p>
+    </div>
 </div>
 
+<div class="container" onclick="openLetter(this)">
+    <div class="flap"></div>
+    <div class="envelope"></div>
+    <div class="letter">
+        <b>Dear akku ❤️</b>
+        <p>You make every moment special.</p>
+    </div>
+</div>
 
- <div class="container" onclick="openLetter()">
-
-<div class="flap"></div>
-
-<div class="envelope"></div> 
-  <div class="letter">
-
-<b>Dear akku ❤️</b>
-
-<p>
-Because you make my life brighter even from miles away.
-</p>
+<div class="container" onclick="openLetter(this)">
+    <div class="flap"></div>
+    <div class="envelope"></div>
+    <div class="letter">
+        <b>Dear akku ❤️</b>
+        <p>Your smile makes my day.</p>
+    </div>
+</div>
 
 </div>
 
-<div class="container" onclick="openLetter()">
-
-<div class="flap"></div>
-
-<div class="envelope"></div>
+ 
   
-  <div class="letter">
-
-<b>Dear akku ❤️</b>
-
-<p>
-Because you make my life brighter even from miles away.
-</p>
-
-</div>
-
+  
 <!-- <div class="card">Because you understand me</div>
 <div class="card">Because you make me smile</div>
 <div class="card">Because you listen to my nonsense</div>
