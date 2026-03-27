@@ -81,17 +81,28 @@ top:10px;
 left:10px;
 padding:10px;
 box-sizing:border-box;
-transition:0.6s;
+transition: transform 0.6s ease;
 border-radius:5px;
 text-align:center;
 font-size:14px;
 }
 
 .container.open .letter{
- transform:translateY(-120px);
- transition: 0.6s 
+ transform:translateY(-120px) scale(1.1);
+ animation: popletter 0.4s ease;
 }
 
+@keyframes popLetter{
+  0%{
+     transform: translateY(0) scale(0.8);}
+  60%{
+     transform: translateY(-130px) scale(1.2);}
+  100%{
+      transform: translateY(-120px) scale(1.1);}
+}
+
+
+  
 .container.open .flap{
 transform:rotateX(180deg);
 }
