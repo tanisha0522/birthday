@@ -1,1 +1,12 @@
+<script>
 
+function showReason(text){
+document.getElementById("popup").style.display="block";
+document.getElementById("reasonText").innerText=text;
+}
+
+function closePopup(){
+document.getElementById("popup").style.display="none";
+}
+
+</script>
