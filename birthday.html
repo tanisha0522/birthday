@@ -3,10 +3,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Happy Birthday aku</title>
 
-  <script>
-
+<script>
 function openLetter(element){
- element.classList.toggle("open");
+element.classList.toggle("open");
 }
 </script>
   
@@ -71,25 +70,24 @@ border-right:100px solid transparent;
 border-bottom:65px solid #e6c79c;
 transition:0.5s;
 }
-
+  
 .letter{
-position:absolute;
-background:white;
-width:180px;
-height:120px;
-top:10px;
-left:10px;
-padding:10px;
-box-sizing:border-box;
-transition: transform 0.6s ease;
-border-radius:5px;
-text-align:center;
-font-size:14px;
+    position:absolute;
+    width:140px;
+    height:100px;
+    background:white;
+    top:20px;
+    left:10px;
+    padding:10px;
+    text-align:center;
+    transform: translateY(0);
+    opacity:0;
+    transition: all 0.6s ease;
 }
 
 .container.open .letter{
- transform:translateY(-120px) scale(1.1);
- animation: popletter 0.4s ease;
+    transform: translateY(-120px);
+    opacity:1;
 }
 
 @keyframes popLetter{
@@ -223,8 +221,15 @@ Thank you for being part of my life and making every day special.
 
 </div>
 
-  
 
+  
+<script>
+function openLetter(element){
+element.classList.toggle("open");
+}
+</script>
+
+  
    
 </body>
 
